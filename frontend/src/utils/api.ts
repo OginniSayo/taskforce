@@ -6,7 +6,7 @@ import { getAuthStorage } from './authStorage';
 const BASE_URL =
   import.meta.env.MODE === "development"
     ? import.meta.env.VITE_BACKEND_URL
-    : "/_/backend/";
+    : "";
 
 const api = axios.create({
   baseURL: BASE_URL,
