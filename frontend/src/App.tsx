@@ -7,6 +7,7 @@ import Login from './components/Login'
 import SignUp from './components/SignUp'
 
 import { ToastContainer } from 'react-toastify';
+import { Analytics } from '@vercel/analytics/react';
 import Dashboard from './pages/Dashboard'
 import PendingPage from './pages/PendingPage'
 import CompletePage from './pages/CompletePage'
@@ -60,6 +61,7 @@ const App = (): JSX.Element => {
           } />
         </Routes>
       </div>
+      <Analytics />
     </>
   )
 }
