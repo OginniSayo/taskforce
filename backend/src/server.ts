@@ -24,21 +24,11 @@ if (process.env.NODE_ENV !== "production") {
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// DB Connect
-connectDB()
-
 // Routes
 app.use('/api/user', userRouter);
 app.use('/api/tasks', taskRouter)
 
-if (process.env.NODE_ENV === "production") {
-  app.use(express.static(path.join(__dirname, "../../frontend/dist")));
-
-  app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "../../frontend", "dist", "index.html"));
-  });
-}
-
+// DB Connect
 connectDB().then(() => {
   app.listen(port, () => {
     console.log(`Server started on http://localhost:${port}`);
