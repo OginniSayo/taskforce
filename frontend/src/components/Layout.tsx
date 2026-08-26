@@ -122,7 +122,7 @@ const Layout = (): JSX.Element => {
       <Navbar />
       <Sidebar tasks={tasks} />
 
-      <div className='ml-0 lg:ml-64 xl:ml-96 pt-18 p-3 sm:p-4 sm:pt-16 transition-all duration-300'>
+      <div className='ml-0 lg:ml-64 2xl:ml-96 pt-18 p-3 sm:p-4 sm:pt-16 transition-all duration-300'>
         <div className='grid grid-cols-1 xl:grid-cols-3 gap-4 sm:gap-6'>
 
           <div className='xl:col-span-2 space-y-3 sm:space-y-4'>

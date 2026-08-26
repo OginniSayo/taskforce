@@ -116,7 +116,7 @@ export const menuItems = [
 
 export const SIDEBAR_CLASSES = {
   desktop:
-    "hidden lg:flex flex-col fixed h-full w-20 lg:w-64 xl:w-96 bg-base-100/90 backdrop-blur-sm border-r border-primary/20 shadow-sm z-20 transition-all duration-300",
+    "hidden lg:flex flex-col fixed h-full w-20 lg:w-64 2xl:w-96 bg-base-100/90 backdrop-blur-sm border-r border-primary/20 shadow-sm z-20 transition-all duration-300",
   mobileButton:
     "absolute lg:hidden top-20 sm:top-18 -left-4 z-40 bg-secondary dark:bg-primary/80 text-base-100 p-3 pl-4 shadow-lg rounded-r-lg hover:bg-primary transition duration-200 cursor-pointer",
   mobileDrawerBackdrop: "fixed inset-0 bg-base-content/40 backdrop-blur-sm",
@@ -276,7 +276,7 @@ export const SELECT_CLASSES =
 export const TABS_WRAPPER =
   "hidden md:flex space-x-1 bg-primary/10 p-1 rounded-lg";
 export const TAB_BASE =
-  "px-3 py-1.5 rounded-lg text-xs font-medium transition-all duration-200 cursor-pointer";
+  "px-3 xl:px-2 2xl:px-3 py-1.5 rounded-lg text-xs font-medium transition-all duration-200 cursor-pointer";
 export const TAB_ACTIVE = "bg-base-100 text-primary shadow-sm border";
 export const TAB_INACTIVE =
   "text-neutral/60 dark:text-neutral-content/60 hover:bg-primary/10";
